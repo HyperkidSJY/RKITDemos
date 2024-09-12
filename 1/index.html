@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile Setup Page">
+    <title>Profile Setup</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Please provide your personal details to set up your profile.</p>
+
+    <!-- Profile Picture -->
+    <label for="profile-picture">
+        <img id="profile-img" src="150.png" alt="Profile Picture" width="150" height="150">
+    </label>
+
+    <!-- Profile Form -->
+    <form action="#" method="POST">
+        <!-- File input for profile picture -->
+        <input type="file" id="profile-picture" name="profile-picture"><br><br>
+
+        <!-- Full Name -->
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+
+        <!-- Hobbies -->
+        <label for="hobbies">Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies" value="reading"> Reading
+        <input type="checkbox" id="hobby2" name="hobbies" value="music"> Music
+        <input type="checkbox" id="hobby3" name="hobbies" value="sports"> Sports<br><br>
+
+        <!-- Country  -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Profile">
+    </form>
+</body>
+</html>
