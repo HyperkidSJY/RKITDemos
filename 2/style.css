@@ -102,3 +102,22 @@ input[type="submit"]:hover {
         font-size: 14px;
     }
 }
+
+.redirect-container p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.redirect-container h1 {
+    color: #2e8b57;
+}
+
+.redirect-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
