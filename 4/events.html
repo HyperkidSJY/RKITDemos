@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demo</title>
+    <style>
+        #hoverElement {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>HTML Event Demo</h2>
+
+    <!-- onchange -->
+    <label for="textChange">Type something: </label>
+    <input type="text" id="textChange">
+    <br><br>
+
+    <!-- onclick -->
+    <button id="clickButton">Click Me</button>
+    <br><br>
+
+    <!-- onmouseover and onmouseout -->
+    <div id="hoverElement">Hover Over Me</div>
+    <br><br>
+
+    <!-- onkeydown, onkeyup, onkeypress -->
+    <label for="keyPress">Press any key: </label>
+    <input type="text" id="keyPress">
+    <br><br>
+
+    <!-- onload message -->
+    <p>The onload event has already triggered an alert when this page loaded.</p>
+
+    <script>
+        // Function for onload event
+        window.onload = function() {
+            alert('Page has fully loaded!');
+        };
+
+        // Function for onchange event
+        document.getElementById('textChange').onchange = function() {
+            alert('Text has changed!');
+        };
+
+        // Function for onclick event
+        document.getElementById('clickButton').onclick = function() {
+            alert('Button Clicked!');
+        };
+
+        // Function for onmouseover and onmouseout events
+        var hoverElement = document.getElementById('hoverElement');
+        hoverElement.onmouseover = function() {
+            hoverElement.style.backgroundColor = 'lightgreen';
+            hoverElement.innerHTML = 'Mouse Over!';
+        };
+        hoverElement.onmouseout = function() {
+            hoverElement.style.backgroundColor = 'lightblue';
+            hoverElement.innerHTML = 'Mouse Out!';
+        };
+
+        // Function for keydown event
+        document.getElementById('keyPress').onkeydown = function(event) {
+            console.log('Key down: ' + event.key);
+        };
+
+        // Function for keyup event
+        document.getElementById('keyPress').onkeyup = function(event) {
+            console.log('Key up: ' + event.key);
+        };
+
+        // Function for keypress event
+        document.getElementById('keyPress').onkeypress = function(event) {
+            console.log('Key press: ' + event.key);
+        };
+    </script>
+
+</body>
+</html>
