@@ -95,6 +95,19 @@ async function fetchData() {
 }
 fetchData();
 
+// The function will execute asynchronously, but it won’t wait for any other asynchronous code to finish.
+// async function myFunction() {
+//     console.log("This is an async function without await");
+// }
+
+// myFunction(); // Returns a promise
+
+// function myFunction() {
+//     await somePromise; // SyntaxError: await is only valid in async function
+// }
+
+
+
 // == vs ===
 console.log(5 == '5');  // true (type coercion)
 console.log(5 === '5'); // false (no type coercion)
