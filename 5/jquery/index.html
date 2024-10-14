@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box" id="jquery-intro">
+        <p>Click the button to change this text using jQuery:</p>
+        <button id="change-text">Change Text</button>
+    </div>
+
+    <h2>Events in jQuery</h2>
+    <div class="box" id="jquery-events">
+        <p>Hover over this box to change its background color:</p>
+        <div id="hover-box" class="hover-box"></div>
+        <button id="programmatic-event">Hover Event</button>
+    </div>
+
+    <h2>jQuery Validation</h2>
+    <div class="box" id="jquery-validation">
+        <form id="simple-form">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="error" id="error-message">Please enter your name!</div>
+    </div>
+
+    <h2>jQuery Functions</h2>
+    <div class="box" id="jquery-functions">
+        <ul id="item-list">
+            <li>Item0</li>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <button id="list-map">Show Mapped List</button>
+        <button id="list-filter">Filter Even Length Items</button>
+    </div>
+
+    <h2>Regular Expression in jQuery</h2>
+    <div class="box" id="jquery-regex">
+        <input type="text" id="regex-input" placeholder="Type 'hello'">
+        <button id="regex-check">Check Input</button>
+        <div id="regex-result"></div>
+    </div>
+
+    <h2>Callback Functions in jQuery</h2>
+    <div class="box" id="jquery-callback">
+        <p>Click the button:</p>
+        <button id="callback-button">Click me</button>
+    </div>
+
+    <h2>Deferred & Promise Object</h2>
+    <div class="box" id="jquery-promise">
+        <button id="start-async">Start Async Operation</button>
+        <div id="async-result"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

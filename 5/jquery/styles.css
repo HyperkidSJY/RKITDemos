@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.hover-box {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    color: red;
+    display: none;
+}

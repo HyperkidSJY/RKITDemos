@@ -28,6 +28,9 @@ Person.prototype.sayHello = function() {
     return `Hello, my name is ${this.name}`;
 };
 
+const person1 = new Person('Shivam', 21);
+console.log(person1.sayHello()); // Output: "Hello, my name is Alice"
+
 // ES6 Class syntax
 class Animal {
     constructor(type, name) {
@@ -76,13 +79,13 @@ console.log(arrowFunction()); // Outputs: 'I am an arrow function'
 /* Import, Export, async, and await */
 // Assuming we have two files: `module.js` and `main.js`
 // module.js
-export function greet() {
-    return "Hello from the module!";
-}
+// export function greet() {
+//     return "Hello from the module!";
+// }
 
-// main.js
-import { greet } from './module.js';
-console.log(greet()); // Outputs: 'Hello from the module!'
+// // main.js
+// import { greet } from './module.js';
+// console.log(greet()); // Outputs: 'Hello from the module!'
 
 // Async/Await Example
 async function fetchData() {
