@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX & JSON Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>AJAX Demo with JSON</h2>
+
+<!-- AJAX (Asynchronous JavaScript and XML) allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page. -->
+
+<!-- GET: Requests data from the server without altering it (e.g., reading data).
+POST: Sends new data to the server (e.g., creating a new record).
+PUT: Updates existing data on the server (e.g., updating a record).
+DELETE: Deletes data from the server (e.g., removing a record). -->
+
+<!-- Form -->
+<form id="ajax-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <button type="submit">Send</button>
+</form>
+
+<!-- display the response -->
+<div id="response">
+    <h3>Response from Server:</h3>
+    <pre id="server-response"></pre>
+</div>
+
+<script>
+$(document).ready(function() {
+    // Handle form submission
+    $('#ajax-form').submit(function(e) {
+        e.preventDefault(); // Prevent form from submitting the normal way
+
+        // Capture form data
+        var name = $('#name').val();
+        var age = $('#age').val();
+
+        // AJAX request
+        $.ajax({
+            url: 'https://jsonplaceholder.typicode.com/posts', // Fake API for demo
+            type: 'POST',
+            dataType: 'json', // JSON response
+            contentType: 'application/json', // Sending JSON data
+            data: JSON.stringify({ 
+                name: name,
+                age: age
+            }),
+            success: function(response) {
+                // Display server response
+                $('#server-response').text(JSON.stringify(response, null, 4));
+            },
+            error: function(error) {
+                console.error("Error:", error);
+                $('#server-response').text('Error occurred during the request.');
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
