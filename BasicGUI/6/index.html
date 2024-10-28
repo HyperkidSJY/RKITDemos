@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <!-- displaying the quote -->
+        <div id="quote"></div>
+        <button id="quote-btn" onclick="fetchQuote()">Get Quote</button>
+
+        
+        <!-- input form for adding task and it's due date. -->
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <input type="date" id="task-date" placeholder="Due Date">
+        </div>
+        <button id="add-task-btn" onclick="addTask()">Add Task</button>
+
+
+        <!-- Search box to search the tasks -->
+        <div class="task-controls">
+            <input type="text" id="search-input" placeholder="Search tasks" oninput="searchTasks()">
+            <button onclick="clearCompletedTasks()" id="clear-completed-btn" class="clear-completed-btn">Clear Completed Tasks</button>
+        </div>
+
+
+        <!-- Sorting option -->
+        <select id="sort-options" onchange="sortTasks()">
+            <option value="date-asc">Sort by Due Date (Ascending)</option>
+            <option value="date-desc">Sort by Due Date (Descending)</option>
+        </select>
+        
+
+        <!-- rendering the task lists -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Script -->
+    <script type="module" src="./modules/main.js"></script>
+</body>
+</html>
