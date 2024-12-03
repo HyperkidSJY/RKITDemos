@@ -1,0 +1,15 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\refint\OperatorsAndExpressionsAndStatements.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\OperatorsAndExpressionsAndStatements.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\obj\Debug\net8.0\ref\OperatorsAndExpressionsAndStatements.dll

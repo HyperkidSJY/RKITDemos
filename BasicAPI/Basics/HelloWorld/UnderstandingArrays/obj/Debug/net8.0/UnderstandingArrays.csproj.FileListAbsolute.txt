@@ -1,0 +1,15 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\bin\Debug\net8.0\UnderstandingArrays.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\bin\Debug\net8.0\UnderstandingArrays.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\bin\Debug\net8.0\UnderstandingArrays.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\bin\Debug\net8.0\UnderstandingArrays.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\bin\Debug\net8.0\UnderstandingArrays.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\refint\UnderstandingArrays.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\UnderstandingArrays.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\UnderstandingArrays\obj\Debug\net8.0\ref\UnderstandingArrays.dll

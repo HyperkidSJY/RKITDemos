@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OperatorsAndExpressionsAndStatements</id>
+    <version>1.0.0</version>
+    <authors>OperatorsAndExpressionsAndStatements</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="982246d3b4e92ee85bcebc269d657d8ce1139fd1" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.runtimeconfig.json" target="lib\net8.0\OperatorsAndExpressionsAndStatements.runtimeconfig.json" />
+    <file src="C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OperatorsAndExpressionsAndStatements\bin\Debug\net8.0\OperatorsAndExpressionsAndStatements.dll" target="lib\net8.0\OperatorsAndExpressionsAndStatements.dll" />
+  </files>
+</package>
