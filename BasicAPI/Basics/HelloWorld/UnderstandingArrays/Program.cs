@@ -1,6 +1,11 @@
 ﻿namespace UnderstandingArrays
-{
-    internal class Program
+{   /// <summary>
+    /// Explores different types of arrays in C# and their operations.
+    /// Includes single-dimensional arrays, multi-dimensional arrays, and jagged arrays.
+    /// Demonstrates operations such as accessing, iterating, sorting, searching, copying, resizing, clearing elements, 
+    /// finding max/min values, reversing, and converting data into arrays.
+    /// </summary>
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -103,6 +108,19 @@
             // Reverse an array
             Array.Reverse(numbers);
             Console.WriteLine("Reversed Array: " + string.Join(", ", numbers));
+
+
+            string input = "1,2,3,4";
+
+            // Split the string by commas and convert to an integer array
+            int[] x = Array.ConvertAll(input.Split(','), int.Parse);
+
+            // Print the array to verify
+            Console.WriteLine("Array elements:");
+            foreach (int y in x)
+            {
+                Console.WriteLine(y);
+            }
         }
     }
 }

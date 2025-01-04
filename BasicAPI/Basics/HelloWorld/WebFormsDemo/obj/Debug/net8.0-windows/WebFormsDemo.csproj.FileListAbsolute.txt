@@ -1,0 +1,17 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\bin\Debug\net8.0-windows\WebFormsDemo.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\bin\Debug\net8.0-windows\WebFormsDemo.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\bin\Debug\net8.0-windows\WebFormsDemo.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\bin\Debug\net8.0-windows\WebFormsDemo.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\bin\Debug\net8.0-windows\WebFormsDemo.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.Form1.resources
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.csproj.GenerateResource.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\refint\WebFormsDemo.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\WebFormsDemo.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebFormsDemo\obj\Debug\net8.0-windows\ref\WebFormsDemo.dll

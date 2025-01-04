@@ -1,0 +1,15 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\bin\Debug\net8.0\OOPConcepts.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\bin\Debug\net8.0\OOPConcepts.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\bin\Debug\net8.0\OOPConcepts.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\bin\Debug\net8.0\OOPConcepts.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\bin\Debug\net8.0\OOPConcepts.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\refint\OOPConcepts.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\OOPConcepts.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\OOPConcepts\obj\Debug\net8.0\ref\OOPConcepts.dll

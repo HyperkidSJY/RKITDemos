@@ -1,0 +1,15 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\bin\Debug\net8.0\Bank.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\bin\Debug\net8.0\Bank.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\bin\Debug\net8.0\Bank.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\bin\Debug\net8.0\Bank.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\bin\Debug\net8.0\Bank.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\refint\Bank.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\Bank.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\Bank\obj\Debug\net8.0\ref\Bank.dll

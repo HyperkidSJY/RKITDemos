@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OperatorsAndExpressionsAndStatements
+﻿namespace OperatorsAndExpressionsAndStatements
 {
+    /// <summary>
+    /// Demonstrates the concept of expressions in C#, which are combinations of operators, variables, and literals that produce a value.
+    /// Includes examples of arithmetic and logical expressions.
+    /// </summary>
     public class Expressions
     {
         public static void Main()

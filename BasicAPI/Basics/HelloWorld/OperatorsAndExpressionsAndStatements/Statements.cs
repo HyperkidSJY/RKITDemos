@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OperatorsAndExpressionsAndStatements
-{
+﻿namespace OperatorsAndExpressionsAndStatements
+{   /// <summary>
+    /// Demonstrates the concept of statements in C#, which are complete units of execution. 
+    /// Includes examples of declaration, assignment, control (conditional, looping, switch), jump statements, 
+    /// and method declarations with overloading.
+    /// </summary>
     public class Statements
     {
+        static int PlusMethod(int x, int y)
+        {
+            return x + y;
+        }
+
+        static double PlusMethod(double x, double y)
+        {
+            return x + y;
+        }
         public static void Main()
         {
             //A statement is a complete unit of execution, such as declarations, assignments, and method calls.
@@ -54,6 +61,12 @@ namespace OperatorsAndExpressionsAndStatements
                     break;  // Exit the loop when i equals 3
                 Console.WriteLine("Value: " + i);
             }
+
+            //Define & calling of Methods
+            int myNum1 = PlusMethod(8, 5);
+            double myNum2 = PlusMethod(4.3, 6.26);
+            Console.WriteLine("Int: " + myNum1);
+            Console.WriteLine("Double: " + myNum2);
         }
     }
 }

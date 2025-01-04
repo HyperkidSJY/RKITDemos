@@ -1,0 +1,15 @@
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\bin\Debug\net8.0\WebAPI.exe
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\bin\Debug\net8.0\WebAPI.deps.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\bin\Debug\net8.0\WebAPI.runtimeconfig.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\bin\Debug\net8.0\WebAPI.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\bin\Debug\net8.0\WebAPI.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.AssemblyInfoInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.AssemblyInfo.cs
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.sourcelink.json
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\refint\WebAPI.dll
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.pdb
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
+C:\shit crap\RKIT\DEMOS\BasicAPI\Basics\HelloWorld\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll

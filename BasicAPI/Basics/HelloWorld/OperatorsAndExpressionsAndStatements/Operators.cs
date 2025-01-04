@@ -1,7 +1,8 @@
-﻿using System;
-
-namespace OperatorsAndExpressionsAndStatements
-{
+﻿namespace OperatorsAndExpressionsAndStatements
+{   /// <summary>
+    /// Demonstrates the usage of various operators in C# for performing operations on variables and values. 
+    /// Includes examples of arithmetic, relational, logical, bitwise, assignment, increment/decrement, and ternary operators.
+    /// </summary>
     public class Operators
     {
         public static void Main()

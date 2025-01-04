@@ -1,4 +1,14 @@
-﻿//HelloWorld Program
+﻿/// <summary>
+/// This program demonstrates fundamental C# programming concepts, including:
+/// - Printing output using `Console.WriteLine()` and `Console.Write()`.
+/// - Declaring and using variables of various data types (e.g., `int`, `string`, `double`, `char`, `bool`).
+/// - Defining constants with `const` and understanding their immutability.
+/// - Displaying variables using concatenation and performing arithmetic operations.
+/// - Implicit and explicit type casting between different data types.
+/// - Using the `Convert` class for type conversions (e.g., int to string, double to int).
+/// </summary>
+
+//HelloWorld Program
 Console.WriteLine("Hello, World!");
 
 //Demo with Write Command.

@@ -1,0 +1,15 @@
+F:\Shivam-422\AdvanceAPI\bin\Debug\net6.0\AdvanceAPI.exe
+F:\Shivam-422\AdvanceAPI\bin\Debug\net6.0\AdvanceAPI.deps.json
+F:\Shivam-422\AdvanceAPI\bin\Debug\net6.0\AdvanceAPI.runtimeconfig.json
+F:\Shivam-422\AdvanceAPI\bin\Debug\net6.0\AdvanceAPI.dll
+F:\Shivam-422\AdvanceAPI\bin\Debug\net6.0\AdvanceAPI.pdb
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.csproj.AssemblyReference.cache
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.GeneratedMSBuildEditorConfig.editorconfig
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.AssemblyInfoInputs.cache
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.AssemblyInfo.cs
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.csproj.CoreCompileInputs.cache
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.dll
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\refint\AdvanceAPI.dll
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.pdb
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\AdvanceAPI.genruntimeconfig.cache
+F:\Shivam-422\AdvanceAPI\obj\Debug\net6.0\ref\AdvanceAPI.dll
