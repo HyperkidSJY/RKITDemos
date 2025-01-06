@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,10 +10,6 @@
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\DemoLibrary\DemoLibrary.csproj" />
   </ItemGroup>
 
 </Project>
