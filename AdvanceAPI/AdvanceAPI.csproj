@@ -5,11 +5,15 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>AdvanceAPI.BaseLib</StartupObject>
+    <StartupObject>AdvanceAPI.BaseClassLib</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoLibrary\DemoLibrary.csproj" />
   </ItemGroup>
 
 </Project>

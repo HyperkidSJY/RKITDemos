@@ -158,6 +158,16 @@
             "related": ".xml"
           }
         }
+      },
+      "DemoLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DemoLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DemoLibrary.dll": {}
+        }
       }
     }
   },
@@ -901,10 +911,16 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "DemoLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DemoLibrary/DemoLibrary.csproj",
+      "msbuildProject": "../DemoLibrary/DemoLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DemoLibrary >= 1.0.0",
       "System.Runtime.Numerics >= 4.3.0"
     ]
   },
@@ -934,7 +950,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Shivam-422\\RKITDemos\\DemoLibrary\\DemoLibrary.csproj": {
+              "projectPath": "F:\\Shivam-422\\RKITDemos\\DemoLibrary\\DemoLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
