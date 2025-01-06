@@ -28,3 +28,6 @@ F:\Shivam-422\RKITDemos\AdvanceAPI\obj\Debug\net7.0\refint\AdvanceAPI.dll
 F:\Shivam-422\RKITDemos\AdvanceAPI\obj\Debug\net7.0\AdvanceAPI.pdb
 F:\Shivam-422\RKITDemos\AdvanceAPI\obj\Debug\net7.0\AdvanceAPI.genruntimeconfig.cache
 F:\Shivam-422\RKITDemos\AdvanceAPI\obj\Debug\net7.0\ref\AdvanceAPI.dll
+F:\Shivam-422\RKITDemos\AdvanceAPI\bin\Debug\net7.0\DemoLibrary.dll
+F:\Shivam-422\RKITDemos\AdvanceAPI\bin\Debug\net7.0\DemoLibrary.pdb
+F:\Shivam-422\RKITDemos\AdvanceAPI\obj\Debug\net7.0\AdvanceAPI.csproj.CopyComplete
