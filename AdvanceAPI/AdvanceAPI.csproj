@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>AdvanceAPI.BaseClassLib</StartupObject>
+    <StartupObject>AdvanceAPI.SecandCryp</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

@@ -60,7 +60,7 @@ ALTER TABLE yme01 ADD e01f08 VARCHAR(100); -- Add Email Column
 UPDATE yme01 SET e01f05 = e01f05 * 1.1 WHERE e01f04 = 2;
 
 -- DCL Example
-GRANT SELECT, INSERT ON company_db.* TO 'user'@'localhost' IDENTIFIED BY 'password';
+-- GRANT SELECT, INSERT ON company_db.* TO 'user'@'localhost' IDENTIFIED BY 'password';
 
 -- TCL Example
 START TRANSACTION;
