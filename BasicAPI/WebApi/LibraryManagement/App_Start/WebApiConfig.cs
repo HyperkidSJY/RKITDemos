@@ -22,6 +22,8 @@ namespace LibraryManagement
                 Duration = 60
             });
 
+            config.Filters.Add(new CustomExceptionAttribute());
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

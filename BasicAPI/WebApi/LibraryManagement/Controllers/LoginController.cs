@@ -1,5 +1,6 @@
 ﻿using LibraryManagement.Helpers;
 using LibraryManagement.Models;
+using System;
 using System.Web.Http;
 
 namespace LibraryManagement.Controllers
@@ -10,7 +11,7 @@ namespace LibraryManagement.Controllers
     [RoutePrefix("api/auth")]
     public class LoginController : ApiController
     {
-        /// <summary>
+         /// <summary>
         /// Endpoint to sign in a user by validating their username and password, and issuing a JWT token.
         /// </summary>
         /// <param name="user">The user object containing the username and password for authentication.</param>
@@ -43,6 +44,13 @@ namespace LibraryManagement.Controllers
 
             // If credentials do not match, return a 401 Unauthorized response
             return Unauthorized();
+        }
+
+        [HttpGet]
+        [Route("error")]
+        public IHttpActionResult GetError()
+        {
+            throw new Exception("An Unexpected Error occured");
         }
     }
 }

@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
 namespace AdvanceAPI.LINQ
 {
+    /// <summary>
+    /// Provides methods for retrieving sample data related to employees and departments.
+    /// </summary>
     public static class Data
     {
+        /// <summary>
+        /// Gets a list of employee objects.
+        /// </summary>
+        /// <returns>A list of Employee objects.</returns>
         public static List<Employee> GetEmployees()
         {
             List<Employee> employees = new List<Employee>();
 
+            // Creating and adding employee objects to the list
             Employee employee = new Employee
             {
                 Id = 1,
@@ -55,13 +58,17 @@ namespace AdvanceAPI.LINQ
             employees.Add(employee);
 
             return employees;
-
         }
 
+        /// <summary>
+        /// Gets a list of department objects.
+        /// </summary>
+        /// <returns>A list of Department objects.</returns>
         public static List<Department> GetDepartments()
         {
             List<Department> departments = new List<Department>();
 
+            // Creating and adding department objects to the list
             Department department = new Department
             {
                 Id = 1,
@@ -87,10 +94,15 @@ namespace AdvanceAPI.LINQ
             return departments;
         }
 
+        /// <summary>
+        /// Gets a heterogeneous collection of data including integers, strings, and objects.
+        /// </summary>
+        /// <returns>An ArrayList containing various types of objects.</returns>
         public static ArrayList GetHeterogeneousDataCollection()
         {
             ArrayList arrayList = new ArrayList();
 
+            // Adding different types of data to the ArrayList
             arrayList.Add(100);
             arrayList.Add("Bob Jones");
             arrayList.Add(2000);
@@ -103,8 +115,6 @@ namespace AdvanceAPI.LINQ
             arrayList.Add(new Department { Id = 6, ShortName = "PRD", LongName = "Production" });
 
             return arrayList;
-
         }
-
     }
 }

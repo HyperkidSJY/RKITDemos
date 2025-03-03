@@ -2,6 +2,7 @@
 {
     using System;
     using System.Linq;
+    using System.Linq.Expressions;
 
     public class Lamda
     {
@@ -117,6 +118,16 @@
 
             Console.WriteLine("\n6. Using Lambda Expressions with OrderBy and ThenBy");
             Lamda.LambdaWithOrderByThenBy();
+
+            //new is used inside the lambda expression to create an anonymous object
+            var numbers = new List<int> { 1, 2, 3, 4, 5 };
+            var result = numbers.Select(x => new { Number = x, Square = x * x }).ToList();
+
+            foreach (var item in result)
+            {
+                Console.WriteLine($"Number: {item.Number}, Square: {item.Square}");
+            }
+
         }
     }
 

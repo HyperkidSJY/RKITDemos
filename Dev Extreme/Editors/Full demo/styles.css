@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Fields */
+.dx-texteditor, .dx-selectbox, .dx-textarea, .dx-radiogroup, .dx-checkbox {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Input styles */
+input, textarea, .dx-texteditor-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Button */
+.dx-button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.dx-button-default {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+button.dx-button-default:hover {
+    background-color: #45a049;
+}
+
+button.dx-button-danger {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+button.dx-button-danger:hover {
+    background-color: #e53935;
+}
+
+/* Validation Summary */
+#validationSummary {
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    label, .dx-texteditor, .dx-selectbox, .dx-textarea {
+        font-size: 14px;
+    }
+
+    .dx-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

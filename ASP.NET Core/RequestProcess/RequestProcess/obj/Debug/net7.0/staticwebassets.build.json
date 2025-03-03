@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "nQlK8CvJcmMQRb2cWhbvYshpEVb7VdjONq07Lheb+4Q=",
+  "Source": "RequestProcess",
+  "BasePath": "_content/RequestProcess",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RequestProcess\\wwwroot",
+      "Source": "RequestProcess",
+      "ContentRoot": "F:\\Shivam-422\\RKITDemos\\ASP.NET Core\\RequestProcess\\RequestProcess\\wwwroot\\",
+      "BasePath": "_content/RequestProcess",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\Shivam-422\\RKITDemos\\ASP.NET Core\\RequestProcess\\RequestProcess\\wwwroot\\images\\logo.png",
+      "SourceId": "RequestProcess",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Shivam-422\\RKITDemos\\ASP.NET Core\\RequestProcess\\RequestProcess\\wwwroot\\",
+      "BasePath": "_content/RequestProcess",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    }
+  ]
+}

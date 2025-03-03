@@ -8,16 +8,22 @@ using System.Threading.Tasks;
 
 namespace AdvanceAPI.LINQ
 {
+    /// <summary>
+    /// Demonstrates various LINQ operations such as sorting, grouping, and filtering.
+    /// </summary>
     public class LinqExamples2
     {
+        /// <summary>
+        /// Main method that demonstrates LINQ sorting, grouping, and filtering.
+        /// </summary>
         static void Main(string[] args)
         {
             List<Employee> employeeList = Data.GetEmployees();
             List<Department> departmentList = Data.GetDepartments();
 
-            //// Sorting Operations OrderBy, OrderByDescending, ThenBy, ThenByDescending
-            ////Method Syntax
-            //var results = employeeList.Join(departmentList,e => e.DepartmentId, d => d.Id,
+            // Sorting Operations OrderBy, OrderByDescending, ThenBy, ThenByDescending
+            // Method Syntax
+            //var results = employeeList.Join(departmentList, e => e.DepartmentId, d => d.Id,
             //    (emp, dept) => new {
             //        Id = emp.Id,
             //        FirstName = emp.FirstName,
@@ -30,7 +36,7 @@ namespace AdvanceAPI.LINQ
             //foreach (var item in results)
             //    Console.WriteLine($"First Name: {item.FirstName,-10} Last Name: {item.LastName, -10} Annual Salary: {item.AnnualSalary,10}\tDepartment Name: {item.DepartmentName}");
 
-            ////Query Syntax
+            // Query Syntax
             //var results = from emp in employeeList
             //              join dept in departmentList
             //              on emp.DepartmentId equals dept.Id
@@ -47,10 +53,9 @@ namespace AdvanceAPI.LINQ
             //foreach (var item in results)
             //    Console.WriteLine($"First Name: {item.FirstName,-10} Last Name: {item.LastName,-10} Annual Salary: {item.AnnualSalary,10}\tDepartment Name: {item.DepartmentName}");
 
-            ////Grouping Operators
-            ////GroupBy - Deffered
+            // Grouping Operators
+            // GroupBy - Deferred
             //var groupResult = from emp in employeeList
-            //                      //orderby emp.DepartmentId descending
             //                  group emp by emp.DepartmentId;
 
             //foreach (var empGroup in groupResult)
@@ -61,11 +66,10 @@ namespace AdvanceAPI.LINQ
             //    {
             //        Console.WriteLine($"\tEmployee Fullname: {emp.FirstName} {emp.LastName}");
             //    }
-
             //}
 
-            ////ToLookup Operator - Immediate
-            ////var groupResult = employeeList.OrderBy(o => o.DepartmentId).ToLookup(e => e.DepartmentId);
+            // ToLookup Operator - Immediate
+            //var groupResult = employeeList.OrderBy(o => o.DepartmentId).ToLookup(e => e.DepartmentId);
             //var groupResult = employeeList.ToLookup(e => e.DepartmentId);
 
             //foreach (var empGroup in groupResult)
@@ -76,11 +80,10 @@ namespace AdvanceAPI.LINQ
             //    {
             //        Console.WriteLine($"\tEmployee Fullname: {emp.FirstName} {emp.LastName}");
             //    }
-
             //}
 
-            ////All, Any, Contains Quantifier Operators
-            ////All and Any Operators
+            // All, Any, Contains Quantifier Operators
+            // All and Any Operators
             //var annualSalaryCompare = 40000;
 
             //bool isTrueAll = employeeList.All(e => e.AnnualSalary > annualSalaryCompare);
@@ -103,7 +106,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"No employees have an annual salary above {annualSalaryCompare}");
             //}
 
-            ////Contains Operator
+            // Contains Operator
             //var searchEmployee = new Employee
             //{
             //    Id = 3,
@@ -125,7 +128,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"An employee record for {searchEmployee.FirstName} {searchEmployee.LastName} was not found");
             //}
 
-            ////OfType filter Operat
+            // OfType filter Operator
             //ArrayList mixedCollection = Data.GetHeterogeneousDataCollection();
 
             //var stringResult = from s in mixedCollection.OfType<string>()
@@ -133,9 +136,8 @@ namespace AdvanceAPI.LINQ
             //foreach (var item in stringResult)
             //    Console.WriteLine(item);
 
-
-            ////ElementAt, ElementAtOrDefault, First, FirstOrDefault, Last, LastOrDefault, Single and SingleOrDefault Element Operators
-            ////ElementAt, ElementAtOrDefault Operators
+            // ElementAt, ElementAtOrDefault, First, FirstOrDefault, Last, LastOrDefault, Single and SingleOrDefault Element Operators
+            // ElementAt, ElementAtOrDefault Operators
             //var emp = employeeList.ElementAtOrDefault(12);
 
             //if (emp != null)
@@ -147,11 +149,9 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine("This employee record does not exist within the collection");
             //}
 
-            ////First, FirstOrDefault, Last, LastOrDefault Operators
+            // First, FirstOrDefault, Last, LastOrDefault Operators
             //List<int> integerList = new List<int> {3,13,23,17,26,87};
 
-            ////int result = integerList.First(i => i % 2 == 0);
-            //// int result = integerList.FirstOrDefault(i => i % 2 == 0);
             //int result = integerList.LastOrDefault(i => i % 2 == 0);
 
             //if (result != 0)
@@ -163,8 +163,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine("There are no even numbers in the collection");
             //}
 
-            ////Single, SingleOrDefault Operators
-
+            // Single, SingleOrDefault Operators
             var emp = employeeList.SingleOrDefault();
 
             if (emp != null)
@@ -175,12 +174,19 @@ namespace AdvanceAPI.LINQ
             {
                 Console.WriteLine("This employee does not exist within the collection");
             }
+
             Console.ReadKey();
         }
     }
 
+    /// <summary>
+    /// Custom comparer to compare two Employee objects.
+    /// </summary>
     public class EmployeeComparer : IEqualityComparer<Employee>
     {
+        /// <summary>
+        /// Determines if two Employee objects are equal.
+        /// </summary>
         public bool Equals([AllowNull] Employee x, [AllowNull] Employee y)
         {
             if (x.Id == y.Id && x.FirstName.ToLower() == y.FirstName.ToLower() && x.LastName.ToLower() == y.LastName.ToLower())
@@ -190,6 +196,9 @@ namespace AdvanceAPI.LINQ
             return false;
         }
 
+        /// <summary>
+        /// Returns the hash code for an Employee object.
+        /// </summary>
         public int GetHashCode([DisallowNull] Employee obj)
         {
             return obj.Id.GetHashCode();

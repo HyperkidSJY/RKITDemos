@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- DevExtreme theme -->
+  <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/24.2.3/css/dx.light.css">
+
+  <!-- DevExtreme libraries (reference only one of them) -->
+  <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/24.2.3/js/dx.all.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/24.2.3/js/dx.web.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/24.2.3/js/dx.viz.js"></script> -->
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body class="dx-viewport">
+  
+  <!-- DateBox widget container - Used to display and interact with a date picker -->
+  <div id="datebox"></div>
+
+  <!-- Section for validating the DateBox widget -->
+  <div>
+    <!-- Button to trigger the validation of the DateBox widget -->
+    <button id="validate-datebox">Validate DateBox</button>
+    
+    <!-- Paragraph to display the status of the validation (valid or invalid) -->
+    <p id="status"></p>
+  </div>
+
+  <!-- Another DateBox widget container -->
+  <div id="myDateBox"></div>
+
+  <!-- Section with various controls to interact with 'myDateBox' widget -->
+  <div>
+    <!-- Button to focus on the 'myDateBox' widget -->
+    <button id="focus-myDateBox">Focus My DateBox</button>
+    
+    <!-- Button to blur (remove focus) from the 'myDateBox' widget -->
+    <button id="blur-myDateBox">Blur My DateBox</button>
+    
+    <!-- Button to open the drop-down calendar of the 'myDateBox' widget -->
+    <button id="open-myDateBox">Open Drop-down</button>
+    
+    <!-- Button to close the drop-down calendar of the 'myDateBox' widget -->
+    <button id="close-myDateBox">Close Drop-down</button>
+    
+    <!-- Button to repaint the 'myDateBox' widget (useful for UI updates) -->
+    <button id="repaint-myDateBox">Repaint My DateBox</button>
+    
+    <!-- Button to reset the value of the 'myDateBox' widget to its default state -->
+    <button id="reset-myDateBox">Reset My DateBox</button>
+    
+    <!-- Button to dispose of the 'myDateBox' widget (cleanup and release resources) -->
+    <button id="dispose-myDateBox">Dispose My DateBox</button>
+    
+    <!-- Button to begin updating the 'myDateBox' widget (useful for batching updates) -->
+    <button id="begin-update-myDateBox">Begin Update</button>
+    
+    <!-- Button to end the update process (flushes the pending changes) -->
+    <button id="end-update-myDateBox">End Update</button>
+    
+    <!-- Paragraph to display status information about the DateBox widget -->
+    <p id="status"></p>
+  </div>
+
+  <!-- Another DateBox widget for event handling -->
+  <div id="eventDateBox"></div>
+  
+  <!-- Section to display output from the event handling -->
+  <div id="output"></div>
+
+</body>
+
+</html>

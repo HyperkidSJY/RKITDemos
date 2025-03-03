@@ -1,0 +1,132 @@
+2025-02-27 11:03:21.8157 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:03:21.8924 INFO Hosting environment: Development 
+2025-02-27 11:03:21.8924 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:06:20.4570 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:06:20.5332 INFO Hosting environment: Development 
+2025-02-27 11:06:20.5360 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:09:21.7797 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:09:21.8729 INFO Hosting environment: Development 
+2025-02-27 11:09:21.8729 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:15:04.7961 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:15:04.8698 INFO Hosting environment: Development 
+2025-02-27 11:15:04.8698 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:18:11.3174 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:18:11.3893 INFO Hosting environment: Development 
+2025-02-27 11:18:11.3893 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:19:01.4145 ERROR An unhandled exception occurred. System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at ExpenseTracker.Helpers.JWTManager.GenerateToken(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Helpers\JWTManager.cs:line 36
+   at ExpenseTracker.Services.UserService.GetJWT(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Services\UserService.cs:line 231
+   at ExpenseTracker.Controllers.AuthController.Login(String email, String password) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Controllers\AuthController.cs:line 70
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-02-27 11:19:01.4809 ERROR An unhandled exception occurred. System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at ExpenseTracker.Helpers.JWTManager.GenerateToken(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Helpers\JWTManager.cs:line 36
+   at ExpenseTracker.Services.UserService.GetJWT(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Services\UserService.cs:line 231
+   at ExpenseTracker.Controllers.AuthController.Login(String email, String password) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Controllers\AuthController.cs:line 70
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-02-27 11:19:43.7359 ERROR An unhandled exception occurred. System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at ExpenseTracker.Helpers.JWTManager.GenerateToken(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Helpers\JWTManager.cs:line 36
+   at ExpenseTracker.Services.UserService.GetJWT(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Services\UserService.cs:line 231
+   at ExpenseTracker.Controllers.AuthController.Login(String email, String password) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Controllers\AuthController.cs:line 70
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-02-27 11:19:43.7417 ERROR An unhandled exception occurred. System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at ExpenseTracker.Helpers.JWTManager.GenerateToken(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Helpers\JWTManager.cs:line 36
+   at ExpenseTracker.Services.UserService.GetJWT(String email) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Services\UserService.cs:line 231
+   at ExpenseTracker.Controllers.AuthController.Login(String email, String password) in F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker\Controllers\AuthController.cs:line 70
+   at lambda_method4(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2025-02-27 11:20:48.7798 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:20:48.8556 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:20:48.8556 INFO Hosting environment: Development 
+2025-02-27 11:20:48.8556 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:22:57.9419 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:22:58.0037 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:22:58.0037 INFO Hosting environment: Development 
+2025-02-27 11:22:58.0037 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:24:45.6378 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:24:45.7456 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:24:45.7456 INFO Hosting environment: Development 
+2025-02-27 11:24:45.7456 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:27:20.8258 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:27:20.8848 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:27:20.8861 INFO Hosting environment: Development 
+2025-02-27 11:27:20.8861 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:31:22.5843 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:31:22.6399 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:31:22.6399 INFO Hosting environment: Development 
+2025-02-27 11:31:22.6399 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:32:37.7663 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:32:37.8377 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:32:37.8377 INFO Hosting environment: Development 
+2025-02-27 11:32:37.8377 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:33:58.9669 INFO Get Expenses Called 
+2025-02-27 11:54:13.5046 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:54:13.5793 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:54:13.5793 INFO Hosting environment: Development 
+2025-02-27 11:54:13.5793 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 11:56:31.8679 INFO Get Expenses Called 
+2025-02-27 11:59:46.6119 INFO Now listening on: http://localhost:5122 
+2025-02-27 11:59:46.7779 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 11:59:46.7792 INFO Hosting environment: Development 
+2025-02-27 11:59:46.7792 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 12:00:33.3010 INFO Get Expenses Called 
+2025-02-27 12:05:37.9826 INFO Now listening on: http://localhost:5122 
+2025-02-27 12:05:38.0608 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 12:05:38.0608 INFO Hosting environment: Development 
+2025-02-27 12:05:38.0608 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 12:06:55.8672 INFO Now listening on: http://localhost:5122 
+2025-02-27 12:06:55.9475 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 12:06:55.9475 INFO Hosting environment: Development 
+2025-02-27 12:06:55.9475 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 12:07:28.9114 INFO Get Expenses Called 
+2025-02-27 12:09:33.2308 INFO Now listening on: http://localhost:5122 
+2025-02-27 12:09:33.3020 INFO Application started. Press Ctrl+C to shut down. 
+2025-02-27 12:09:33.3020 INFO Hosting environment: Development 
+2025-02-27 12:09:33.3020 INFO Content root path: F:\Shivam-422\RKITDemos\ASP.NET Core\ExpenseTracker v2\ExpenseTracker 
+2025-02-27 12:09:52.7277 INFO Get Expenses Called 

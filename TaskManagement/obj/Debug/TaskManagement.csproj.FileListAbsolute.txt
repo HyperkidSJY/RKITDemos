@@ -138,3 +138,13 @@ F:\Shivam-422\RKITDemos\TaskManagement\obj\Debug\TaskManagement.csproj.CoreCompi
 F:\Shivam-422\RKITDemos\TaskManagement\obj\Debug\TaskManagement.csproj.CopyComplete
 F:\Shivam-422\RKITDemos\TaskManagement\obj\Debug\TaskManagement.dll
 F:\Shivam-422\RKITDemos\TaskManagement\obj\Debug\TaskManagement.pdb
+F:\Shivam-422\RKITDemos\TaskManagement\bin\EPPlus.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\EPPlus.Interfaces.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\EPPlus.System.Drawing.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\Microsoft.IO.RecyclableMemoryStream.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\System.ComponentModel.Annotations.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\System.Drawing.Common.dll
+F:\Shivam-422\RKITDemos\TaskManagement\bin\EPPlus.xml
+F:\Shivam-422\RKITDemos\TaskManagement\bin\Microsoft.IO.RecyclableMemoryStream.xml
+F:\Shivam-422\RKITDemos\TaskManagement\bin\System.Drawing.Common.pdb
+F:\Shivam-422\RKITDemos\TaskManagement\bin\System.Drawing.Common.xml

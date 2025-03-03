@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "7zJgHlnZo9z9+bXPl0MqZWfyvfCxnmgByOtbFfDKbA/3tQ/BADQXZasht5PeO4Lt63F16FqiDNrNGVP+LY1+Qw==",
+  "success": true,
+  "projectFilePath": "F:\\Shivam-422\\RKITDemos\\ASP.NET Core\\ActionMethods\\ActionMethods\\ActionMethods.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shivam.y\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.4\\microsoft.aspnetcore.openapi.7.0.4.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\shivam.y\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

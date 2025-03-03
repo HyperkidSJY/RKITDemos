@@ -1,4 +1,8 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Text;
+using System.Web.Http;
 using TaskManagement.Helpers;
 using TaskManagement.Models;
 using TaskManagement.Models.DTO;
@@ -124,6 +128,58 @@ namespace TaskManagement.Controllers
         {
             return _objTaskService.GetTasksByUser(userId);
         }
+
+        [HttpGet]
+        [Route("exporttasks")]
+        public HttpResponseMessage ExportTasksToCsv()
+        {
+            var tasksResponse = _objTaskService.GetAllTasks();
+            var tasks = tasksResponse.Data as List<TSK01>;
+            var csvData = _objTaskService.ConvertTasksToCsv(tasks);
+            var response = Request.CreateResponse(HttpStatusCode.OK);
+            response.Content = new StringContent(csvData, Encoding.UTF8, "text/csv");
+            response.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
+            {
+                FileName = "tasks.csv"
+            };
+
+            //var excelFile = _objTaskService.GenerateExcelFile(tasks);
+            //var response = new HttpResponseMessage(HttpStatusCode.OK)
+            //{
+            //    Content = new ByteArrayContent(excelFile)
+            //};
+
+            //response.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+            //response.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
+            //{
+            //    FileName = "tasks.xlsx"
+            //};
+
+
+            return response;
+        }
+
+        /// <summary>
+        /// Retrieves all tasks along with user details.
+        /// </summary>
+        /// <returns>A response containing tasks with user data.</returns>
+        [HttpGet]
+        [Route("gettaskswithuserdetails")]
+        public IHttpActionResult GetTasksWithUserDetails()
+        {
+            // Call the service method to get tasks with user details
+            _objResponse = _objTaskService.GetTasksWithUserDetails();
+
+            // If there's an error, return the error message
+            if (_objResponse.IsError)
+            {
+                return BadRequest(_objResponse.Message);
+            }
+
+            // Otherwise, return the data (tasks with user details) and a success message
+            return Ok(_objResponse.Data);
+        }
+
 
         #endregion
     }

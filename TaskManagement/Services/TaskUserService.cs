@@ -131,7 +131,7 @@ namespace TaskManagement.Services
             {
                 using (IDbConnection db = _dbFactory.OpenDbConnection())
                 {
-                    var task = db.SingleById<TSK01>(taskId);
+                    TSK01 task = db.SingleById<TSK01>(taskId);
                     if (task == null)
                     {
                         _objResponse.IsError = true;

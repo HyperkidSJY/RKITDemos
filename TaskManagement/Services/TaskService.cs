@@ -1,12 +1,16 @@
-﻿using ServiceStack.Data;
+﻿using OfficeOpenXml;
+using ServiceStack.Data;
 using ServiceStack.OrmLite;
 using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Text;
 using System.Web;
 using TaskManagement.Helpers;
 using TaskManagement.Models;
 using TaskManagement.Models.DTO;
 using TaskManagement.Models.ENUM;
+using TaskManagement.Models.POCO;
 
 namespace TaskManagement.Services
 {
@@ -44,6 +48,7 @@ namespace TaskManagement.Services
             _objTSK01 = new TSK01();
             _objResponse = new Response();
             _dbFactory = HttpContext.Current.Application["DbFactory"] as IDbConnectionFactory;
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         }
 
         #endregion
@@ -239,6 +244,88 @@ namespace TaskManagement.Services
             using (IDbConnection db = _dbFactory.OpenDbConnection())
             {
                 return db.Exists<TSK01>(e => e.K01F01.Equals(id));
+            }
+        }
+
+        public string ConvertTasksToCsv(List<TSK01> tasks)
+        {
+            var csvBuilder = new StringBuilder();
+
+            // Add the header row
+            csvBuilder.AppendLine("TaskId,Title,Description,DueDate,IsCompleted,UserId");
+
+            // Add the task rows
+            foreach (var task in tasks)
+            {
+                csvBuilder.AppendLine($"{task.K01F01},{task.K01F02},{task.K01F03},{task.K01F04},{task.K01F05},{task.K01F06}");
+            }
+
+            return csvBuilder.ToString();
+        }
+
+        public byte[] GenerateExcelFile(List<TSK01> tasks)
+        {
+            using (var package = new ExcelPackage())
+            {
+                // Add a worksheet to the package
+                var worksheet = package.Workbook.Worksheets.Add("Tasks");
+
+                // Add the header row
+                worksheet.Cells[1, 1].Value = "TaskId";
+                worksheet.Cells[1, 2].Value = "Title";
+                worksheet.Cells[1, 3].Value = "Description";
+                worksheet.Cells[1, 4].Value = "DueDate";
+                worksheet.Cells[1, 5].Value = "IsCompleted";
+                worksheet.Cells[1, 6].Value = "UserId";
+
+                // Add the task data to the worksheet
+                for (int i = 0; i < tasks.Count; i++)
+                {
+                    var task = tasks[i];
+                    worksheet.Cells[i + 2, 1].Value = task.K01F01;  // TaskId
+                    worksheet.Cells[i + 2, 2].Value = task.K01F02;  // Title
+                    worksheet.Cells[i + 2, 3].Value = task.K01F03;  // Description
+                    worksheet.Cells[i + 2, 4].Value = task.K01F04;  // DueDate
+                    worksheet.Cells[i + 2, 5].Value = task.K01F05;  // IsCompleted
+                    worksheet.Cells[i + 2, 6].Value = task.K01F06;  // UserId
+                }
+
+                // Convert the Excel package to a byte array
+                return package.GetAsByteArray();
+            }
+        }
+
+        /// <summary>
+        /// Retrieves all tasks along with user details by joining TSK01 (tasks) and USR01 (users).
+        /// </summary>
+        /// <returns>A response containing tasks with user data.</returns>
+        public Response GetTasksWithUserDetails()
+        {
+            using (IDbConnection db = _dbFactory.OpenDbConnection())
+            {
+                // Define the SQL query to join the TSK01 (tasks) table with the USR01 (users) table
+                var q = db.From<TSK01>()
+                          .Join<USR01>()  // Implicit join based on foreign key (K01F06 -> R01F01)
+                          .Select<TSK01, USR01>((task, user) => new
+                          {
+                              TaskId = task.K01F01,
+                              Title = task.K01F02,
+                              Description = task.K01F03,
+                              DueDate = task.K01F04,
+                              IsCompleted = task.K01F05,
+                              UserId = task.K01F06,
+                              UserFirstName = user.R01F02,
+                              UserLastName = user.R01F03,
+                              UserEmail = user.R01F04
+                          }); // Select relevant fields from both tables
+
+                // Execute the query and retrieve the results
+                var tasksWithUserDetails = db.Select(q);
+
+                // Return the response containing tasks with user data
+                _objResponse.Data = tasksWithUserDetails;
+                _objResponse.Message = "Tasks with User details retrieved successfully.";
+                return _objResponse;
             }
         }
 

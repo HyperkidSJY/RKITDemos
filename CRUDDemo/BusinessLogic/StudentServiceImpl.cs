@@ -45,7 +45,7 @@ namespace CRUDDemo.BusinessLogic
             List<STU01> studentList = new List<STU01>();
             try
             {
-                using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM STU01;", connection))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT P01F01, P01F02, P01F03, P01F04 FROM STU01;", connection))
                 {
                     connection.Open();
                     using (MySqlDataReader reader = cmd.ExecuteReader())
@@ -265,7 +265,7 @@ namespace CRUDDemo.BusinessLogic
                 {
                     cmd.Connection = connection;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "SELECT COUNT(*) FROM STU01 WHERE P01F01 = @Id";
+                    cmd.CommandText = "SELECT COUNT (P01F01) FROM STU01 WHERE P01F01 = @Id";
                     cmd.Parameters.AddWithValue("@Id", id);
 
                     connection.Open();

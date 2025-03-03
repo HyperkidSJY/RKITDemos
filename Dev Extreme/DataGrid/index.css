@@ -1,0 +1,31 @@
+/* Custom Edit Button */
+.my-edit-class {
+    background-color: #ffa500;  /* Orange background */
+    color: white;  /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-edit-class:hover {
+    background-color: #ff8c00;
+}
+
+/* Custom Delete Button */
+.my-delete-class {
+    background-color: #f44336;  /* Red background */
+    color: white;  /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-delete-class:hover {
+    background-color: #e53935;
+}

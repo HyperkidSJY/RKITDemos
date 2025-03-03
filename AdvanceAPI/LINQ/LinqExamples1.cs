@@ -6,33 +6,48 @@ using System.Threading.Tasks;
 
 namespace AdvanceAPI.LINQ
 {
+    /// <summary>
+    /// Provides extension methods for working with collections of Employee objects.
+    /// </summary>
     public static class EnumerableCollectionExtensionMethods
     {
+        /// <summary>
+        /// Filters employees with a high annual salary (greater than or equal to 50,000).
+        /// </summary>
+        /// <param name="employees">The collection of employees to filter.</param>
+        /// <returns>An IEnumerable of employees who meet the salary condition.</returns>
         public static IEnumerable<Employee> GetHighSalariedEmployees(this IEnumerable<Employee> employees)
         {
             foreach (Employee emp in employees)
             {
-
+                // Log employee being accessed
                 Console.WriteLine($"Accessing employee: {emp.FirstName + " " + emp.LastName}");
 
+                // Yield employee if salary is above the threshold
                 if (emp.AnnualSalary >= 50000)
                     yield return emp;
             }
         }
     }
+
+    /// <summary>
+    /// Example class demonstrating LINQ usage with Employee and Department data.
+    /// </summary>
     public class LinqExamples1
     {
+        /// <summary>
+        /// Main method that demonstrates various LINQ operations.
+        /// </summary>
         static void Main(string[] args)
         {
             List<Employee> employeeList = Data.GetEmployees();
             List<Department> departmentList = Data.GetDepartments();
 
-            ////Select and Where Operators - Method Syntax
+            // Example: Select and Where Operators - Method Syntax
             //var results = employeeList.Select(e => new
             //{
             //    FullName = e.FirstName + " " + e.LastName,
             //    AnnualSalary = e.AnnualSalary
-
             //}).Where(e => e.AnnualSalary >= 50000);
 
             //foreach (var item in results)
@@ -40,7 +55,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}");
             //}
 
-            ////Select and Where Operators - Query Syntax
+            // Example: Select and Where Operators - Query Syntax
             //var results = from emp in employeeList
             //              where emp.AnnualSalary >= 50000
             //              select new
@@ -54,7 +69,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}");
             //}
 
-            ////Deferred Execution Example -- Lazy Evaluation
+            // Example: Deferred Execution - Lazy Evaluation
             //var results = from emp in employeeList.GetHighSalariedEmployees()
             //              select new
             //              {
@@ -70,7 +85,6 @@ namespace AdvanceAPI.LINQ
             //    AnnualSalary = 100000.20m,
             //    IsManager = true,
             //    DepartmentId = 2
-
             //});
 
             //foreach (var item in results)
@@ -78,7 +92,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}");
             //}
 
-            ////Immediate Execution Example
+            // Example: Immediate Execution
             //var results = (from emp in employeeList.GetHighSalariedEmployees()
             //               select new
             //               {
@@ -94,7 +108,6 @@ namespace AdvanceAPI.LINQ
             //    AnnualSalary = 100000.20m,
             //    IsManager = true,
             //    DepartmentId = 2
-
             //});
 
             //foreach (var item in results)
@@ -102,8 +115,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}");
             //}
 
-
-            //// Join Operation Example - Method Syntax
+            // Example: Join Operation - Method Syntax
             //var results = departmentList.Join(employeeList,
             //        department => department.Id,
             //        employee => employee.DepartmentId,
@@ -120,8 +132,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}\t{item.DepartmentName}");
             //}
 
-
-            //// Join Operation Example - Query Syntax
+            // Example: Join Operation - Query Syntax
             //var results = from dept in departmentList
             //              join emp in employeeList
             //              on dept.Id equals emp.DepartmentId
@@ -130,7 +141,6 @@ namespace AdvanceAPI.LINQ
             //                  FullName = emp.FirstName + " " + emp.LastName,
             //                  AnnualSalary = emp.AnnualSalary,
             //                  DepartmentName = dept.LongName
-
             //              };
 
             //foreach (var item in results)
@@ -138,8 +148,7 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"{item.FullName,-20} {item.AnnualSalary,10}\t{item.DepartmentName}");
             //}
 
-
-            ////GroupJoin Operator Example - Method Syntax
+            // Example: GroupJoin Operator - Method Syntax
             //var results = departmentList.GroupJoin(employeeList,
             //        dept => dept.Id,
             //        emp => emp.DepartmentId,
@@ -154,10 +163,9 @@ namespace AdvanceAPI.LINQ
             //    Console.WriteLine($"Department Name: {item.DepartmentName}");
             //    foreach (var emp in item.Employees)
             //        Console.WriteLine($"\t{emp.FirstName} {emp.LastName}");
-
             //}
 
-            ////GroupJoin Operator Example - Query Syntax
+            // Example: GroupJoin Operator - Query Syntax
             var results = from dept in departmentList
                           join emp in employeeList
                           on dept.Id equals emp.DepartmentId
@@ -173,7 +181,6 @@ namespace AdvanceAPI.LINQ
                 Console.WriteLine($"Department Name: {item.DepartmentName}");
                 foreach (var emp in item.Employees)
                     Console.WriteLine($"\t{emp.FirstName} {emp.LastName}");
-
             }
 
             Console.ReadKey();

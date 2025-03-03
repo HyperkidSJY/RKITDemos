@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AdvanceAPI
-{
+{   <summary>Demo of the Dynamic type</summary>
     public class DynamicType
     {
         static void Main()

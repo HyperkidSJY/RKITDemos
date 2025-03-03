@@ -163,6 +163,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CustomExceptionAttribute.cs" />
     <Compile Include="Helpers\JwtAuthorizorAttribute.cs" />
     <Compile Include="Helpers\JWTManager.cs" />
     <Compile Include="Models\Book.cs" />

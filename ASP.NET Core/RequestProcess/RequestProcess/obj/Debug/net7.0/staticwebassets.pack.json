@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Shivam-422\\RKITDemos\\ASP.NET Core\\RequestProcess\\RequestProcess\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RequestProcess.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RequestProcess.props",
+      "PackagePath": "build\\RequestProcess.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RequestProcess.props",
+      "PackagePath": "buildMultiTargeting\\RequestProcess.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RequestProcess.props",
+      "PackagePath": "buildTransitive\\RequestProcess.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

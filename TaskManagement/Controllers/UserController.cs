@@ -63,19 +63,19 @@ namespace TaskManagement.Controllers
             return _objResponse;
         }
 
-        //[HttpPut]
-        //[Route("updateuser")]
-        //public Response UpdateUser(DTOUSR01 newUser)
-        //{
-        //    _objUserService.Type = EnmType.E;
-        //    _objUserService.PreSave(newUser);
-        //    _objResponse = _objUserService.Validate();
-        //    if (!_objResponse.IsError)
-        //    {
-        //        _objResponse = _objUserService.Save();
-        //    }
-        //    return _objResponse;
-        //}
+        [HttpPut]
+        [Route("updateuser")]
+        public Response UpdateUser(DTOUSR01 newUser)
+        {
+            _objUserService.Type = EnmType.E;
+            _objUserService.PreSave(newUser);
+            _objResponse = _objUserService.Validate();
+            if (!_objResponse.IsError)
+            {
+                _objResponse = _objUserService.Save();
+            }
+            return _objResponse;
+        }
 
         /// <summary>
         /// Deletes an existing user by their ID.

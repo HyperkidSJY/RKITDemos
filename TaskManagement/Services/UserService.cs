@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using TaskManagement.Helpers;
 using TaskManagement.Models;
@@ -73,11 +74,14 @@ namespace TaskManagement.Services
         public void PreSave(DTOUSR01 objDTO)
         {
             _objUSR01 = objDTO.Convert<USR01>();
-            if (Type == EnmType.A)
+            _objUSR01.R01F05 = Encryption.GetEncryptPassword(_objUSR01.R01F05);
+            if (Type == EnmType.E)
             {
-                _objUSR01.R01F05 = Encryption.GetEncryptPassword(_objUSR01.R01F05);
+                if (IsExist(objDTO.R01F01))
+                {
+                    _id = objDTO.R01F01;
+                }
             }
-            // Additional logic for 'Edit' type can be implemented here (currently commented out).
         }
 
         #endregion
@@ -94,7 +98,10 @@ namespace TaskManagement.Services
             {
                 return Add(_objUSR01);
             }
-            // Additional logic for 'Edit' type can be implemented here (currently commented out).
+            if (Type == EnmType.E)
+            {
+                return Update(_objUSR01);
+            }
             _objResponse.IsError = true;
             _objResponse.Message = "Internal Error";
             return _objResponse;
@@ -125,6 +132,26 @@ namespace TaskManagement.Services
         }
 
         #endregion
+
+        public Response Update(USR01 user)
+        {
+
+            try
+            {
+                using (var db = _dbFactory.OpenDbConnection())
+                {
+                    db.Update(user);
+                }
+                _objResponse.Message = "User Updated";
+            }
+            catch (Exception ex)
+            {
+                _objResponse.IsError = true;
+                _objResponse.Message = "User not updated";
+                throw new Exception(ex.Message);
+            }
+            return _objResponse;
+        }
 
         #region Validation
 
